@@ -1,87 +1,163 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
-     	<!-- CSS-->
-	<link  href="css/style 1.css" type="text/css" rel="stylesheet" >
-	 <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-      
-    <title>Отправка формы на почту </title>
-         
+    <meta http-equiv="X-UA-Compatible" content="IE=edge
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--SEO-->
+	<meta name="description"content="LSL">
+	<meta name="keywords"  content="LSL">
+	<meta name="author"     content= "LSL">
+	<!--favicon.ico-->
+	 <link rel="shortcut icon" href="/favicon.ico"type="image/x-icon">
+	 <link rel=" icon" href="/favicon.ico"type="image/x-icon">
+	<!-- CSS-->
+	 <link  href="css/style 1.css" type="text/css" rel="stylesheet" >
+    <!--normalize.css-->
+      <link rel="stylesheet" href="css/normalize.css">
+	<!--Font-->
+	 <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+        <title>Главная</title
+         HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries 
+     WARNING: Respond.js doesn't work if you view the page via file:// 
+    [if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
    <!-- [endif]-->
-   
-    
-    <style>
-	form {
-    		background: url(../img/background.png) repeat;
-    		padding: 20px;
-    		margin: 20px;
-			position:absolute;
-            top:50px;
-            left:100px;
-    	}
-		.Warning{
-    		position:absolute;
-            top:50px;
-            left:100px;
-		}
-    </style>
   </head>
-
   <body>
-    <div class="container">
+     <div class="header">
+               <div class="wrapper"
+               
+                <a class="heder-logo-link">
+		  <img src="img/logo.png"alt="logo"class="logo-img"/>
+		  <div class="heder-logo-text">Сайт портфолио</div>
+		        </a>
+		  <ul class="socials"
+		  <li class="socials-item">
+		  <a href="https://twitter.com/"><img src="img/tw.png"width="30" height="25" target="_blank"class="socials-link tw"></a
+		  </li>
+		  <li class="socials-item">
+          <a href="https://vk.com"><img src="img/vk .png"width="30" height="25" target="_blank"class="socials-link vk"></a>
+		 </li>
+		 <li class="socials-item">
+		  <a href="https://www.facebook.com"><img src="img/facebook.png"width="30" height="25" target="_blank"class="socials-link fb"></a>
+		  </li>
+		   </ul>              
+	           </div>
+		
+          </div>
+	 <div class="content">
+      <!--Сайтбар-->
+        <aside class="sidebar"
+		<ul class="navigatiuon-list"
+		   <li class="left-side-center-li">
+                    
+            <li class="left-side-center-li">
+                    <a class="left-side-center-li-a" href="index2.html" >Мои работы</a></li>
+            <li class="left-side-center-li">
+                    <a class="left-side-center-li-a" href="thank-you.html" >Мои контакты</a></li>
+		</ul>
 
-      <div class="row">
-      	<div class="col-sm-4">
-      		<form action="mail.php" method="POST" enctype="multipart/form-data">
-      			<legend>Заказать сайт</legend>
+		</aside>
+		<aside class="contact"
+		                 <ul
+		                       <li>-Услуги- </li>
+                               <li>Создание сайтов:</li>
+							   <hr color="#689AA9">
+		                       <li>Сайт интернет-магазин---</li>
+							   <li>Сайт корпоративный---</li>
+							   <li>Сайт имиджевый---</li>
+							   <li>Landing Page---</li>
+							   <li>Портал---</li>
+                               <li>Продвижение сайтов:</li>
+                                <hr color="#689AA9">
+							   <li>Контекстная реклама---</li>
+							   <li>Банерная/таргетированная---</li>
+							   <li>SMM/социальные сети---</li>
+							   <li>Поддержка сайтов:</li>
+							   <hr color="#689AA9">
+							   <li>Хостинг + домен---</li>
+							   <li>Информационное обслуживание (статьи, новости
+                                и т. п.)---</li>
+							   <li>Техническое обслуживание---</li>
+							   <li>Ведение групп ВКонтакте---</li>
+							   <li>Полиграфия:</li>
+							   <hr color="#689AA9">
+							   <li>Баннеры---</li>
+							   <li> Логотипы, фирменный стиль, визитки---</li>
+							   <li> Мобильные приложения:</li>
+							   <li>3D-панорамы---</li>
+							   <li>Анализ, аудит, аналитика---</li>
+		                  </ul>
+		</aside>
+		      		
 
-      			<div class="form-group">
-      				<label for="">Введите ваше имя</label>
-      				<input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
-      			</div>
-      		
-      			<div class="form-group">
-      				<label for="">Введите номер телефона</label>
-      				<input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
-      			</div>
-      		     <div class="form-group">
-      				<label for="">Введите email</label>
-      				<input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
-      			</div>
-      			<div class="form-group">
-      				<label for="">Загрузите файл</label>
-      				<input type="file" id="" name="upload" placeholder="mail@mail.ru">
-      			</div>
-      		
-      			<button type="submit" class="btn btn-primary">Отправить форму</button>
-      		</form>
-      	</div><!-- .col-sm-4 -->
-      </div> <!-- .row -->
+		<div class="variable-content">
+		<section class="aboutbox">
+		            <h2> Основная   информация</h2
+		                 <ul
+			                   <li>Леухин Сергей Леонидович</li>
+			                   <li>Специальность-вэбразроботчик </li>
+			             </ul>
+		 <hr color="#689AA9">
+		 <img src="img/Sergei.jpg" alt="альтернативный текст"  width="100" height="100">
+        </section
+		          
+           
+			 <section>
+				<h2>Разроботка сайтов любой сложности</h2>
+				<p> Схема работы
+				 Клиент/исполнитель</p>
 
-    </div><!-- /.container -->
+				 1. Обращаетесь ко мне по почте или с помощью формы обратной связи.<br>
 
-<div class="Warning">
- Внимание!!!  Пожалуйста загрузите макет сайта в любом  формате.
-</div>
+				 2. Обсуждаем задание.<br>
 
-      <a href="index1.html">На главную</a
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+				 3. Утверждаем цену и сроки.<br>
+
+				 4. Вносите 50% предоплаты. Оплату можно произвести в Webmoney (WMZ, WMK, WMR) . Другие способы оплаты                      можно обсудить отдельно.<br>
+		
+             </section>
+        </div>
+      </div>
+	                    
+	               
+	  <footer class="page-footer">
+  
+              <div class="container">
+
+                   <div class="lock">
+				
+
+                          <a href="index.html"class="lock-inner">Заказать сайт</a>
+                   </div>
+             </div>
+   <div class="copyright">&copy;2017 </div>
+    </footer>
+	 <!--modernizr-->
+	  <script  type="text/javascript" src="js/modernizr-custom.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>   
+
+
   </body>
 </html>
-	
+  
+    
+                          
+                          
+		  
+		  
+                   
+		                  
+		 
+		                 
+       
+
+
+  
+
+
+
+  
