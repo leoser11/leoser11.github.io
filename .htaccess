@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /
+
+DirectoryIndex index.html
+
